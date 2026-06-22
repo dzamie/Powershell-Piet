@@ -1,4 +1,4 @@
-﻿using namespace System.Drawing
+using namespace System.Drawing
 using namespace System.Collections.Generic
 
 # 
@@ -514,19 +514,19 @@ function SizeAndRun {
 # command help function for this script
 # focused more on end-user Piet interpretation - if you're doing more scripty things, you can read the comments here
 function pietHelp {
-    "RunPiet $src $muffled? $maxCycles?"
+    "RunPiet `$src `$muffled? `$maxCycles?"
     "`tExecutes the given Piet program, with a codel size of 1 pixel"
-    "`t$src:       [string] file path, or [Bitmap] image object, of the Piet program image"
-    "`t$muffled:   [boolean] whether to wait until halt to output, or output mid-execution"
-    "`t            defaults to $false (prints a num/char when a Piet Out command is executed"
-    "`t$maxCycles: [int] how many Piet color blocks to pass through before halting"
+    "`t`$src:       [string] file path, or [Bitmap] image object, of the Piet program image"
+    "`t`$muffled:   [boolean] whether to wait until halt to output, or output mid-execution"
+    "`t            defaults to `$false (prints a num/char when a Piet Out command is executed"
+    "`t`$maxCycles: [int] how many Piet color blocks to pass through before halting"
     "`t            defaults to 10k. All nonblack codel blocks increment this counter"
     ""
-    "SizeAndRun $src $w $h? $muffled? $maxCycles?"
+    "SizeAndRun `$src `$w `$h? `$muffled? `$maxCycles?"
     "`tCreates a resized copy of the program image, then runs the program"
-    "`t$src:   see RunPiet above. May have codel sizes greater than 1 pixel"
-    "`t$w:     [int] width of the Piet program, in codels"
-    "`t$h:     [int] height of the Piet program, in codels"
-    "`t        defaults to the value given for $w"
-    "`t$muffled, $maxCycles: identical functionality as for RunPiet above"
+    "`t`$src:   see RunPiet above. May have codel sizes greater than 1 pixel"
+    "`t`$w:     [int] width of the Piet program, in codels"
+    "`t`$h:     [int] height of the Piet program, in codels"
+    "`t        defaults to the value given for `$w"
+    "`t`$muffled, `$maxCycles: identical functionality as for RunPiet above"
 }
